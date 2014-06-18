@@ -1,0 +1,35 @@
+* { margin:0; padding:0; }
+/*body { background:#222; }*/
+div.container { background:#222; margin:0 auto; overflow:hidden; width:100%; } 
+div div div { background:#222; float:left; margin:0 0 0 0; overflow:hidden; }
+div div div:last-child { margin-right:0; }
+div div.row01 div { width:15%; }
+div div.row02 div { width:33.33%; }
+div div.row03 div { width:50%; }
+div div.row04 div { width:100%; }
+div div.row_last div { margin-bottom:0; }
+p { color:#666; font:0.75em/1.5em verdana, sans-serif; padding:1.5em; }
+p.context { margin-left:5%; }
+p span { color:#fff; }
+a { color:#c00; }
+div .mens {
+	background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/Classic-Gandy-striped-double-breasted-suit.jpg'
+) no-repeat 50% 0%;
+	background-position: -450px 0px;
+	height:500px;
+}
+div .womens {
+	background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/fashion-photography-vogue-2013daniele-iangos-photography-for-vogue-korea-march-2013----design-rh15jy2h.jpg') no-repeat 50% 0%;
+	height:500px;
+}
+
+img.logo {
+	display: block;
+	margin: 0 auto;
+	width: 19.25%;
+}
+
+.navlist li {
+	display: inline;
+	color: #666;
+}

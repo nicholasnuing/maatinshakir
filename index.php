@@ -15,21 +15,41 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<?php if ( have_posts() ): ?>
-<h2>Latest Posts</h2>	
-<ol>
-<?php while ( have_posts() ) : the_post(); ?>
-	<li>
-		<article>
-			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
-			<?php the_content(); ?>
-		</article>
-	</li>
-<?php endwhile; ?>
-</ol>
-<?php else: ?>
-<h2>No posts to display</h2>
-<?php endif; ?>
+	<div class="container">
+		<div class="row02">
+			<div>
+				<p>MAATINSHAKIR</p>
+			</div>
+			<div>
+				<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/square-copy.png">
+			</div>
+			<div style="color:#666; font:0.75em/1.5em verdana, sans-serif;">
+				&nbsp;
+<!-- 				<ul class="navlist" style="padding:1.5em;text-align:right;">
+					<li>news | </li>
+					<li><a href="men">men</a> | </li>
+					<li><a href="women">women</a> | </li>
+					<li>about | </li>
+					<li>blog | </li>
+					<li>contact</li>
+				</ul>
+ -->			</div>
+		</div>
+		<div class="row03">
+			<div class="womens">
+				<a href="womens-page">
+					<div style="text-align:center;height:100%;width:100%;overflow:auto;margin:auto;background:none;"></div>
+				</a>
+			</div>
+			<div class="mens">
+				<a href="mens-page">
+					<div style="text-align:center;height:100%;width:100%;overflow:auto;margin:auto;background:none;"></div>
+				</a>
+			</div>
+		</div>
+		<div class="row04" style="float:left;width:100%;background:#222;height:300px;">
+			<p style="float:left;">&nbsp;</p>
+		</div>
+	</div>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
